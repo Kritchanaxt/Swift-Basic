@@ -67,3 +67,56 @@ func doSomethingWithUserInfo(info: (name: String, isPremium: Bool, isNew: Bool))
 
 let info = getUserIsInfo3()
 doSomethingWithUserInfo(info: info) //ส่งค่า info เข้าไปทำงานใน func
+
+
+// การใช้งาน Tuples
+
+// 1.การประกาศและการใช้งาน Tuples
+let person: (String, Int, Double) = ("Alice", 30, 5.5)
+
+// การเข้าถึงค่าภายใน Tuple:
+let name = person.0      // "Alice"
+let age = person.1       // 30
+let height = person.2    // 5.5
+
+// 2.การใช้งาน Named Tuples
+let person = (name: "Alice", age: 30, height: 5.5)
+
+// การเข้าถึงค่าภายใน Tuple:
+let name = person.name   // "Alice"
+let age = person.age     // 30
+let height = person.height  // 5.5
+
+// 3.การเปลี่ยนค่าใน Tuple (ถ้า Tuple เป็นตัวแปร):
+var person = (name: "Alice", age: 30, height: 5.5)
+person.age = 31         // เปลี่ยนค่าอายุเป็น 31
+
+// 4. การใช้งาน Tuple เพื่อการคืนค่าจากฟังก์ชัน:
+func getUser() -> (name: String, age: Int) {
+    return ("Bob", 25)
+}
+
+let user = getUser()
+print("Name: \(user.name), Age: \(user.age)")
+
+// 5. การเปรียบเทียบ Tuples:
+let tuple1 = (1, "A")
+let tuple2 = (1, "B")
+let tuple3 = (2, "A")
+
+print(tuple1 < tuple2)  // true เพราะ 1 < 1 คือ false และ "A" < "B" คือ true
+print(tuple1 < tuple3)  // true เพราะ 1 < 2 คือ true
+
+// 6. การใช้ Tuple เพื่อการสลับค่า:
+
+var a = 5
+var b = 10
+(a, b) = (b, a)  // สลับค่าของ a และ b
+print("a: \(a), b: \(b)")  // a: 10, b: 5
+
+
+
+
+
+
+
