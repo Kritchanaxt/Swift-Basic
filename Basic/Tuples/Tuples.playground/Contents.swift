@@ -74,7 +74,7 @@ doSomethingWithUserInfo(info: info) //ส่งค่า info เข้าไป
 // 1.การประกาศและการใช้งาน Tuples
 let person: (String, Int, Double) = ("Alice", 30, 5.5)
 
-// การเข้าถึงค่าภายใน Tuple:
+/// การเข้าถึงค่าภายใน Tuple:
 let name = person.0      // "Alice"
 let age = person.1       // 30
 let height = person.2    // 5.5
@@ -82,7 +82,7 @@ let height = person.2    // 5.5
 // 2.การใช้งาน Named Tuples
 let person = (name: "Alice", age: 30, height: 5.5)
 
-// การเข้าถึงค่าภายใน Tuple:
+/// การเข้าถึงค่าภายใน Tuple:
 let name = person.name   // "Alice"
 let age = person.age     // 30
 let height = person.height  // 5.5
@@ -108,7 +108,6 @@ print(tuple1 < tuple2)  // true เพราะ 1 < 1 คือ false และ 
 print(tuple1 < tuple3)  // true เพราะ 1 < 2 คือ true
 
 // 6. การใช้ Tuple เพื่อการสลับค่า:
-
 var a = 5
 var b = 10
 (a, b) = (b, a)  // สลับค่าของ a และ b
