@@ -10,6 +10,14 @@ struct Person {
     }
 }
 
+//MARK: การทำงานของคอมพิวเต็ดพรอเพอร์ตี้นี้
+/*
+ name.prefix(1) ดึงตัวอักษรตัวแรกของ name ออกมาเป็น Substring
+ .capitalized ทำให้ตัวอักษรตัวแรกของ Substring นี้เป็นตัวพิมพ์ใหญ่
+ name.dropFirst() เอาตัวอักษรตั้งแต่ตำแหน่งที่ 2 จนถึงตัวสุดท้ายของ name
+ ใช้ + รวมตัวอักษรพิมพ์ใหญ่ที่ได้จาก prefix(1).capitalized กับตัวอักษรที่เหลือจาก dropFirst()
+*/
+
 let person = Person(name: "Wave")
 print(person.capitaliziedFirstLetterOfName)
 
