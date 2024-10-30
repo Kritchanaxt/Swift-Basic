@@ -18,7 +18,7 @@ struct Person {
  ใช้ + รวมตัวอักษรพิมพ์ใหญ่ที่ได้จาก prefix(1).capitalized กับตัวอักษรที่เหลือจาก dropFirst()
 */
 
-let person = Person(name: "Wave")
+let person = Person(name: "wave")
 print(person.capitaliziedFirstLetterOfName)
 
 //Computed Property
