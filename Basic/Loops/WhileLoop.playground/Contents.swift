@@ -21,3 +21,12 @@ while x <= 3 {
     print(x)
     x += 1
 }
+
+while true {
+    print("Number: \(n)")
+    n += 1
+    
+    if n > 5 {
+        break
+    }
+}
