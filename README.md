@@ -162,5 +162,4 @@
 ### Codable
 - จัดการข้อมูลในรูปแบบต่างๆ เช่น JSON โดยใช้ `Encodable` และ `Decodable`
 
----
 
